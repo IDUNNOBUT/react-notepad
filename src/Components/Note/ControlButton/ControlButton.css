@@ -1,0 +1,26 @@
+.Control-button {
+    font-family: 'Montserrat', sans-serif;
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: var(--bg-left-50op);
+    color: var(--logo-font-color);
+    padding: .2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    transition: transform .3s ease, background-color .3s ease, color .3s ease;
+}
+
+.Control-button:hover {
+    transform: scale(115%);
+}
+
+@media screen and (max-width: 400px) {
+    .Control-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

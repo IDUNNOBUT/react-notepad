@@ -1,0 +1,80 @@
+.Header__container {
+    background-color: var(--header);
+    transition: background-color .3s ease;
+}
+
+.Header__content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: .5rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.Header__theme {
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    padding: 0;
+    margin: 0;
+    transition: transform .3s ease-in-out;
+}
+
+.Header__theme:hover {
+    transform: scale(115%);
+}
+
+.Header__logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Header__logo p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.8rem;
+    border-right: .15em solid orange;
+    color: var(--logo-font-color);
+    transition: color .3s ease;
+    animation: typing 1.5s steps(20, end) forwards,
+    blink-caret 1.5s step-end forwards;
+}
+
+.Header__logo > svg {
+    flex-shrink: 0;
+}
+
+.Header__logo > svg > path {
+    fill: var(--logo-font-color);
+    transition: fill .3s ease;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    10%,30%,50%,70%,100% { border-color: transparent }
+    0%,20%,40%,60%,80%,90% {
+    border-color: var(--bg-left-50op);
+}
+}
+
+
+@media screen and (max-width:400px)  {
+    .Header__content {
+        padding: .5rem 1rem;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,114 @@
+.Notes__wrapper {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+    align-self: center;
+}
+
+.Notes__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: var(--header);
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+    transition: background-color .3s ease;
+}
+
+.Notes__total-count {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--logo-font-color);
+    transition: color .3s ease;
+}
+
+.Notes__filter {
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .8rem;
+    font-family: 'Montserrat',sans-serif;
+    flex-grow: 1;
+    margin: 0 .5rem;
+    line-height: 1.4;
+    appearance: none;
+    border: none;
+    background-color: var(--bg-left-50op);
+}
+
+.Notes__filter:focus-visible {
+    outline: transparent;
+}
+
+.Notes__clear-all {
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: transform .3s ease-in-out;
+}
+
+.Notes__clear-all:hover {
+    transform: scale(115%);
+}
+
+.Notes__clear-all > svg > path {
+    fill: var(--logo-font-color);
+    transition: fill .3s ease;
+}
+
+.Notes__container {
+    margin-top:1rem;
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
+}
+
+.Notes__add {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+    background-color: var(--header);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: background-color .3s ease;
+}
+
+.Notes__add-button {
+    cursor: pointer;
+    font-family: 'PT Sans',sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 2rem;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    transition: transform .3s ease-in-out;
+}
+
+.Notes__add-button:hover {
+    transform: scale(115%);
+}
+
+.Notes__add-button > svg > path {
+    fill: var(--logo-font-color);
+    transition: fill .3s ease;
+}
+
+@media screen and (max-width:300px)  {
+    .Notes__wrapper {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,107 @@
+.Custom-select {
+    box-sizing: border-box;
+    position: relative;
+    font-size: .75rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.Custom-select__value {
+    background-color: var(--bg-left-50op);
+    color: var(--logo-font-color);
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.Custom-select__value_active {
+    background-color: var(--bg-right);
+    border-radius: .5rem .5rem 0 0;
+    transition: background-color .3s ease;
+}
+
+.Custom-select__icon {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    align-items: center;
+}
+
+.Custom-select__icon > svg {
+    transition: transform .3s ease;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.Custom-select__icon > svg > path {
+    fill: var(--logo-font-color);
+    transition: fill .3s ease;
+}
+
+.Custom-select__icon_showed {
+    transform: rotate(180deg);
+}
+
+.Custom-select__icon_closed {
+    transform: rotate(0deg);
+}
+
+.Custom-select__value:focus-visible {
+    outline: transparent;
+    border-radius: 0;
+}
+
+.Custom-select__options {
+    box-sizing: border-box;
+    clip-path: inset(0 0 0 0 round 0 0 .5rem .5rem);
+    position: absolute;
+    max-height: 6rem;
+    overflow-y: auto;
+    top: 100%;
+    width: 100%;
+    list-style: none;
+    opacity: 0;
+    animation: options .3s ease forwards;
+}
+
+
+.Custom-select__options::-webkit-scrollbar{
+    background-color: var(--logo-font-color);
+    border-radius: 0 0 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-center);
+    border-radius:0 0 .5rem 0;
+}
+
+.Custom-select__option {
+    box-sizing: border-box;
+    text-align: center;
+    padding: .5rem 0;
+    background-color:  var(--bg-right);
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.Custom-select__option:hover {
+    background-color:  var(--bg-center);
+}
+
+.Custom-select__option:last-child {
+}
+
+@keyframes options {
+    from {
+    }
+    to {
+        opacity: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .Custom-select {
+        font-size: 1rem;
+    }
+}

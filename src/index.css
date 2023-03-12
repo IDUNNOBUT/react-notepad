@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+body:has(.light) {
+  --bg-left: #9D5094;
+  --bg-left-50op: rgba(157, 80, 148, 0.5);
+  --bg-center: #927EC6;
+  --bg-right: #86A8E7;
+  --header:white;
+  --logo-font-color: #011C27;
+}
+
+body:has(.dark) {
+  --bg-left: #121212;
+  --bg-left-50op: rgba(18, 18, 18, 0.5);
+  --bg-center: #3f3f3f;
+  --bg-right: #717171;
+  --header:#8b8b8b;
+  --logo-font-color: white;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +25,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right top,
+  var(--bg-left), var(--bg-center), var(--bg-right)
+  );
+  background-size: 200%;
+  animation: gradient-animation 8s ease-in-out infinite;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
