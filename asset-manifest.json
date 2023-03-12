@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-notepad/static/css/main.58898a94.css",
-    "main.js": "/react-notepad/static/js/main.2c0b7892.js",
+    "main.css": "/react-notepad/static/css/main.82057aed.css",
+    "main.js": "/react-notepad/static/js/main.d0f089cf.js",
     "static/js/787.1f50f65d.chunk.js": "/react-notepad/static/js/787.1f50f65d.chunk.js",
     "static/media/lightMode.svg": "/react-notepad/static/media/lightMode.83afdc240297aa2a99fe3dae9e491554.svg",
     "static/media/clearAll.svg": "/react-notepad/static/media/clearAll.7b933ed20a0a7dbec560f7be5133617f.svg",
@@ -12,12 +12,12 @@
     "static/media/addButton.svg": "/react-notepad/static/media/addButton.5ed8a5cb629a4c7d3d9a81a93c3168f7.svg",
     "index.html": "/react-notepad/index.html",
     "static/media/index.cjs": "/react-notepad/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.58898a94.css.map": "/react-notepad/static/css/main.58898a94.css.map",
-    "main.2c0b7892.js.map": "/react-notepad/static/js/main.2c0b7892.js.map",
+    "main.82057aed.css.map": "/react-notepad/static/css/main.82057aed.css.map",
+    "main.d0f089cf.js.map": "/react-notepad/static/js/main.d0f089cf.js.map",
     "787.1f50f65d.chunk.js.map": "/react-notepad/static/js/787.1f50f65d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58898a94.css",
-    "static/js/main.2c0b7892.js"
+    "static/css/main.82057aed.css",
+    "static/js/main.d0f089cf.js"
   ]
 }
