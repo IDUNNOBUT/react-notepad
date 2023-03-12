@@ -6,7 +6,7 @@ import {ReactComponent as LightMode} from './../../Assets/lightMode.svg';
 import {ReactComponent as DarkMode} from './../../Assets/darkMode.svg';
 import {ReactComponent as LogoNote} from './../../Assets/logoNote.svg';
 
-let Header = (props) => {
+const Header = (props) => {
     return (
         <header className={'Header__container'}>
             <div className={'Header__content'}><div className={'Header__logo'}><LogoNote/><p>Заметки</p></div>

@@ -12,7 +12,7 @@ import {
     updateNoteAC
 } from "../../Store/notesReducer";
 
-let Notes = (props) => {
+const Notes = (props) => {
     return (
         <main className={'Notes__wrapper'}>
             <header className={'Notes__header'}>
@@ -36,8 +36,8 @@ let Notes = (props) => {
                                                     textStyles={props.textStyles}
                                                     fontFamilyTypes={props.fontFamilyTypes}
                                                     fontSizeTypes={props.fontSizeTypes}/>)}
-                <div className={'Notes__add'}>
-                    <button className={'Notes__add-button'} type={'button'} onClick={() => props.addNote()}><AddButton/>
+                <div className={'Notes__add'} onClick={() => props.addNote()}>
+                    <button className={'Notes__add-button'} type={'button'}><AddButton/>
                     </button>
                 </div>
             </div>

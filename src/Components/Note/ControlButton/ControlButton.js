@@ -1,7 +1,7 @@
 import React from "react";
 import './ControlButton.css'
 
-let ControlButton = (props) => {
+const ControlButton = (props) => {
     return (
         <button className={'Control-button'} type={'button'} style={props.style} onMouseDown={(e) => {
             e.preventDefault();

@@ -2,11 +2,11 @@ import {combineReducers, createStore} from "redux";
 import themeReducer from "./themeReducer";
 import notesReducer from "./notesReducer";
 
-let reducers = combineReducers({
+const reducers = combineReducers({
     theme: themeReducer,
     notes: notesReducer,
 });
 
-let store = createStore(reducers);
+const store = createStore(reducers);
 
 export default store;

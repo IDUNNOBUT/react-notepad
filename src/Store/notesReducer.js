@@ -6,6 +6,7 @@ const UPDATE_NOTE = 'UPDATE_NOTE';
 const UPDATE_FONT = 'UPDATE_FONT';
 const UPDATE_FONT_SIZE = 'UPDATE_FONT_SIZE';
 const DELETE_ALL_NOTES = 'DELETE_ALL_NOTES';
+
 let initialState = {
     notes: JSON.parse(localStorage.getItem('notes')) || [
         {
@@ -25,12 +26,12 @@ let initialState = {
     fontSizeTypes: ['12pt','18pt','24pt']
 };
 
-export let addNoteAC = () => ({type: ADD_NOTE});
-export let deleteNoteAC = (id) => ({type: DELETE_NOTE, id});
-export let updateNoteAC = (id, title, text) => ({type: UPDATE_NOTE, id, title, text});
-export let updateFontAC = (id, fontFamily) => ({type: UPDATE_FONT, id, fontFamily});
-export let updateFontSizeAC = (id, fontSize) => ({type: UPDATE_FONT_SIZE, id, fontSize});
-export let deleteAllAC = () => ({type: DELETE_ALL_NOTES});
+export const addNoteAC = () => ({type: ADD_NOTE});
+export const deleteNoteAC = (id) => ({type: DELETE_NOTE, id});
+export const updateNoteAC = (id, title, text) => ({type: UPDATE_NOTE, id, title, text});
+export const updateFontAC = (id, fontFamily) => ({type: UPDATE_FONT, id, fontFamily});
+export const updateFontSizeAC = (id, fontSize) => ({type: UPDATE_FONT_SIZE, id, fontSize});
+export const deleteAllAC = () => ({type: DELETE_ALL_NOTES});
 
 const notesReducer = (state = initialState, action) => {
     switch (action.type) {

@@ -5,7 +5,8 @@ import ContentEditable from "react-contenteditable";
 import ControlButton from "./ControlButton/ControlButton";
 import CustomSelect from "../CustomSelect/CustomSelect";
 import sanitizeHtml from 'sanitize-html';
-let Note = (props) => {
+
+const Note = (props) => {
     const updateNoteF = props.updateNote;
     const updateFontF = props.updateFont;
     const updateFontSizeF = props.updateFontSize;

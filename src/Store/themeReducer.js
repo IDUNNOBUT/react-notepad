@@ -4,7 +4,7 @@ let initialState = {
     theme: localStorage.getItem('preferedTheme') || 'light',
 };
 
-export let changeThemeAC = (theme) => ({type: CHANGE_THEME, theme});
+export const changeThemeAC = (theme) => ({type: CHANGE_THEME, theme});
 
 const themeReducer = (state = initialState, action) => {
     switch (action.type) {
